@@ -12,6 +12,8 @@
 
 @implementation AppDelegate
 
+//
+
 - (void)dealloc
 {
     [_window release];
