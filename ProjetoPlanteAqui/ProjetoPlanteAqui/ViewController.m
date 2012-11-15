@@ -104,6 +104,7 @@ NSString *getUrlString =  @"http://www.planteaqui.org/api/position?ll=%f,%f";
     
     if (!error) {
         NSString* jsonString = [[NSString alloc]initWithData:receivedData encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", jsonString);
         receivedArray = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
         dataSource = [NSArray arrayWithArray:receivedArray];
         [dataSource retain];

@@ -37,6 +37,7 @@
         UILabel *messageLabel = [[UILabel alloc]init];
         [messageLabel setText:[[self.detailDic valueForKey:@"messages"]objectAtIndex:i]];
         [messageLabel setNumberOfLines:3];
+        [messageLabel setBackgroundColor:[UIColor clearColor]];
         CGSize maximumLabelSize = CGSizeMake(280, 200);
         
         CGSize expectedLabelSize = [[messageLabel text] sizeWithFont:[messageLabel font]
