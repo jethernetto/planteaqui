@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"DetailDic: %@", self.detailDic);
     
     [self buildMessages];
 }
